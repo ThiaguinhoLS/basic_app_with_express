@@ -4,7 +4,7 @@ const port = normalizaPort(process.env.PORT || '3000');
 
 function normalizaPort(val) {
   const port = parseInt(val, 10);
-  if (isNan(port)) {
+  if (isNaN(port)) {
     return val;
   }
   if (port >= 0) {
